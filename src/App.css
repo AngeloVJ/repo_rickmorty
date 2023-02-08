@@ -1,0 +1,115 @@
+.app {
+    padding: 1rem;
+    width: 100%;
+}
+
+.app__gif {
+    height: 230px;
+    box-shadow: 1px 1px 5px #000000;
+    border-radius: 5px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    height: 2.4em;
+    width: 100%;
+    position: relative;
+    margin-top: -3.5rem;
+}
+
+.form__input {
+    width: 100%;
+    max-width: 350px;
+    padding-left: 1em;
+    border-radius: 2em 0 0 2em;
+    background-color: rgba(254, 255, 255, 0.7);
+    border: solid 2px #062226;
+    color: #062226;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form__input:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.form__btn {
+    width: 80px;
+    border-radius: 0 2em 2em 0;
+    background-color: rgb(6,34,38, 1);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 16px;
+    transition: font-weight 100ms ease, filter 100ms ease;
+    cursor: pointer;
+}
+
+.form__btn:hover{
+    background-color: #082c31;
+    font-size: 18px;
+    filter: brightness(1.1);
+}
+
+.app__error {
+    margin-top: 5rem;
+    text-align: center;
+    line-height: 1.8;
+    font-weight: 400;
+    color: red;
+    font-weight: bold;
+}
+
+.img__error {
+    width: 300px;
+    margin: auto;
+}
+
+.residents__container {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1400px;
+    margin-left: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.5rem;
+    font-size: 1.2rem;
+    gap: 10px;
+}
+
+.pagination .page-num {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 400;
+
+}
+
+.pagination .page-num:hover {
+    background-color: #062226;
+    box-shadow: 1px 1px 5px #000000;
+    color: white;
+}
+
+.pagination .active {
+    background-color: #062226;
+    box-shadow: 1px 1px 5px #000000;
+    color: white;
+}
+
+
+
+
+
+

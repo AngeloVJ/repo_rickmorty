@@ -1,0 +1,138 @@
+
+.resident__container-status {
+    display: flex;
+    gap: 0.6em;
+    align-items: center;
+    position: absolute;
+    top: 1.5em;
+    width: 7em;
+    background-color: #062226;
+    padding: 0.3em 0 0.2em 0.6em;
+    border-radius: 0 0.4em 0.4em 0;
+}
+
+.resident__circle {
+    display: block;
+    width: 12px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #aaa;
+}
+.unknown {
+    background-color: #aaa;
+}
+.Alive {
+    background-color: rgb(6, 161, 61);
+}
+.Dead {
+    background-color: rgb(238, 0, 0);
+}
+
+
+.resident__name {
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 1.3rem;
+    padding-top: 60px;
+}
+
+.resident__hr {
+    border: none;
+    border-top: 5px solid rgba(255, 249, 249,);
+}
+
+.resident__list {
+    display: grid;
+    gap: 0.5em;
+    margin-bottom: 120px;
+    background-color: rgb(75, 78, 75);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.resident__label {
+    font-weight: bold;
+    color:#fff
+}
+
+.resident__item {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9rem;
+    position: relative;
+    left: 1em;
+    font-size: 15px;
+    color: #c0bebe
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    padding-top: -30px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #062226;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
